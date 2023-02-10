@@ -195,3 +195,144 @@ header {
     height: 100vh;
     object-fit: cover;
 }
+
+
+.proposito-banner_text {
+    background-color: #ffffff;
+    width: 40%;
+    /*height: 90vh;*/
+    /*display: flex;*/
+    z-index: 1;
+    position: relative;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*flex-direction: column;*/
+    margin: 50px;
+    padding: 50px;
+}
+
+.proposito-banner-title h1 {
+    font-family: 'Gotham Black';
+    color: #71BF4F;
+    font-size: 20px;
+}
+
+.proposito-banner_text_paragh p {
+    /*font-family: 'Gotham Black';*/
+    font-size: 12px;
+    line-height: 23px;
+}
+
+
+/* -------- */
+
+.tasks-banner-section {
+    width: 100%;
+}
+
+.tasks-info-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.task-info {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center; */
+    text-align: center;
+    margin: 50px;
+}
+
+.tasks-title-section {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    padding: 20px;
+    align-items: center;
+}
+
+.task-info-title h4 {
+    font-family: 'Gotham Black';
+    font-size: 16px;
+}
+
+.task-info-text  p {
+    font-size: 13px;
+    line-height: 26px;
+}
+
+.blue-title h4 {
+    color: #466495;
+}
+
+.green-title h4 {
+    color: #71BF4F;
+}
+
+.tasks-title-section h1 {
+    font-family: 'Gotham Black';
+    font-weight: bold;
+    font-size: 30px;
+    color: #466495;
+    padding-left: 3vh;
+}
+
+
+/* ------ */
+
+
+.valor-banner-section{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.valor-banner-section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.valor-banner-section img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.valor-banner_text {
+    background-color: #365180;
+    width: 40%;
+    height: 100%;
+    /*display: flex;*/
+    z-index: 1;
+    position: relative;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*flex-direction: column;*/
+    /*margin: 50px;*/
+    /*padding: 50px;*/
+    left: 100vh;
+}
+
+.valor-banner_text-title {
+    margin: 60px;
+}
+
+.valor-banner_text-paragh {
+    padding: 60px;
+}
+
+.valor-banner_text-paragh p {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.valor-banner_text-title h1 {
+    font-family: 'Gotham Black';
+    font-weight: bold;
+    font-size: 70px;
+    color: #ffffff;
+    text-align: right;
+
+}

@@ -118,6 +118,10 @@ header {
     margin-top: -20px;
 }
 
+.green {
+    color: #71bf4f;
+}
+
 /* --------- */
 
 .proposito-section {
@@ -144,7 +148,7 @@ header {
 
 
 .proposito-section_text_title {
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 
 .proposito-section_text_title h1 {
@@ -176,6 +180,23 @@ header {
     width: 50%;
     padding: 100px;
 }
+
+.about-section_text_title {
+    display: flex;
+    align-items: center;
+    /*padding: 20px;*/
+}
+
+.about-section_text_title figure {
+    margin: 10px;
+}
+
+.about-section_text_title  h3{
+    font-family: 'Gotham Black';
+    font-size: 25px;
+    color: #466495;
+}
+
 
 /* ------- */
 
@@ -439,15 +460,59 @@ header {
     padding: 50px;
 }
 
-
-
-
 .action-section-box{
     background-image: url('/public/images/foto\ aportar\ ideas.jpg');
     width: 545px;
-    height: 380;
+    height: 380px;
     
 }
+
+.action-section-box2{
+    background-image: url('/public/images/foto\ tomar\ accion.jpg');
+    width: 545px;
+    height: 380px;
+    
+}
+
+.action-section-box-text {
+    margin: 70px;
+}
+
+.action-section-box_line {
+    width: 90%;
+    height: 5px;
+    margin-bottom: 50px;
+    background-color: #FEC428;
+}
+
+.action-section-box_button button {
+    border: none;
+    background-color: #FEC428;
+    padding: 15px;
+    font-family: 'Gotham Black';
+    font-weight: bold;
+    color: #ffffff;
+
+}
+
+
+.action-section-box-text-title h4 {
+    font-family: 'Gotham Black';
+    color: #FEC428;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.action-section-box-text-title h5 {
+    font-family: 'Gotham Black';
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.action-section-box-text-paragh p {
+    color: #ffffff;
+}
+
 /*
 .action-section-box img{
     position: absolute;
@@ -489,4 +554,140 @@ header {
     font-family: 'Ink Free';
     color: #ffffff;
     font-size: 35px;
+}
+
+/* -------- */
+
+.form-banner-section{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.form-banner-section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.form-banner-section img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+.form-banner_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 1;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*margin: 50px;*/
+    /*padding: 50px;*/
+    /*left: 100vh;*/
+
+}
+
+.form-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-div1 {
+    display: flex;
+    flex-direction: column;
+    width: 60vh;
+    margin: 20px;
+}
+
+.form-div2 {
+    display: flex;
+    flex-direction: column;
+    width: 60vh;
+    margin: 20px;
+}
+
+.form-div1 input {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.form-box-input{
+    margin: 20px;
+}
+
+.form-box-input input {
+    border: none;
+    color: #ffffff;
+    background-color: #71BF4F;
+    width: 100%;
+    height: 50px;
+}
+
+.form-div1 input::placeholder {
+    color: black;
+}
+
+/*
+.form-div1 input:last-child {
+    height: 150px;
+}*/
+
+.form-div2 textarea {
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+
+.form-banner_text h1 {
+    font-family: 'Gotham Black';
+    font-weight: bold;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.form-banner_text p {
+    font-family: 'Gotham Black';
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/* ----- */
+
+footer {
+
+    width: 100%;
+    background-color: #466495;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.footer-box {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    flex-basis: content;
+    flex-wrap: nowrap;
+    height: 20vh;
+}
+
+.footer-contact-info {
+    margin: 50px;
+    margin-left: 40vh;
+} 
+
+.footer-contact-info ul {
+    list-style: none;
+    color: #ffffff;
+    margin-top: 10vh;
 }

@@ -178,7 +178,11 @@ header {
 
 .about-section_text {
     width: 50%;
-    padding: 100px;
+    padding: 50px;
+}
+
+.about-section_text_parag {
+    padding: 50px;
 }
 
 .about-section_text_title {
@@ -191,12 +195,25 @@ header {
     margin: 10px;
 }
 
+.about-section_text_button button {
+    border: none;
+    background-color: #71BF4F;
+    padding: 15px;
+    font-family: 'Gotham Black';
+    font-weight: bold;
+    color: #ffffff;
+
+}
+
+.about-section_text_parag p {
+    font-size: 14px;
+}
+
 .about-section_text_title  h3{
     font-family: 'Gotham Black';
     font-size: 25px;
     color: #466495;
 }
-
 
 /* ------- */
 
@@ -216,7 +233,6 @@ header {
     height: 100vh;
     object-fit: cover;
 }
-
 
 .proposito-banner_text {
     background-color: #ffffff;
@@ -269,8 +285,10 @@ header {
 .tasks-title-section {
     display: flex;
     flex-direction: row;
-    margin: 50px;
-    padding: 20px;
+    margin: 5vh;
+    padding: 3vh;
+    margin-bottom: 1vh;
+    padding-bottom: 1vh;
     align-items: center;
 }
 
@@ -375,14 +393,16 @@ header {
     display: flex;
     flex-direction: column;
     /*justify-content: center; */
-    margin: 50px;
+    margin: 10vh;
+    margin-top: 3vh;
 }
 
 .service-title-section {
     display: flex;
     flex-direction: row;
-    margin: 50px;
-    padding: 20px;
+    margin: 5vh;
+    padding: 2vh;
+    margin-bottom: 1vh;
     align-items: center;
 }
 
@@ -441,19 +461,68 @@ header {
     flex-direction: row;
 }
 
+.values-section_text_title {
+    display: flex;
+    margin: 4vh;
+    margin-left: 8vh;
+}
+
+.values-section_text_box-info figure {
+    margin-right: 4vh;
+}
+
+.disrupcion figure {
+    margin-right: 3vh;
+}
+
+
+.values-section_text_title h3 {
+    font-family: 'Gotham Black';
+    color: #466495;
+    font-size: 25px;
+}
+
+
 
 .values-section_text_box-info_paragh p {
     font-size: 10px;
 }
 
 .values-section_text_box-info_paragh h4 {
+    font-family: 'Gotham Black';
     font-size: 15px;
 }
+
+.blue-dark-title  h4{
+    color: #365180;
+}
+
+.color-humildad {
+    fill: #71BF4F !important;
+}
+
+.color-conciencia {
+    fill: #365180 !important;
+}
+
+.color-valor {
+    fill: #365180 !important;
+}
+
+.color-investigacion {
+    fill: #71BF4F !important;
+}
+
+.color-disrupcion {
+    fill: #71BF4F !important;
+}
+
 
 /* --------- */
 
 .action-section {
     width: 100%;
+    background-color: #71BF4F;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -478,6 +547,11 @@ header {
     margin: 70px;
 }
 
+
+.action-section-box-text-paragh {
+    margin-top: 6vh;
+}
+
 .action-section-box_line {
     width: 90%;
     height: 5px;
@@ -495,7 +569,6 @@ header {
 
 }
 
-
 .action-section-box-text-title h4 {
     font-family: 'Gotham Black';
     color: #FEC428;
@@ -511,7 +584,26 @@ header {
 
 .action-section-box-text-paragh p {
     color: #ffffff;
+    font-family: 'Gotham Black';
+    font-size: 14px;
 }
+
+
+.green-title h4 {
+    color: #71BF4F;
+}
+
+.green-line {
+    background-color: #71BF4F;
+}
+
+.green-button button {
+
+    background-color: #71BF4F;
+
+}
+
+
 
 /*
 .action-section-box img{
@@ -554,6 +646,10 @@ header {
     font-family: 'Ink Free';
     color: #ffffff;
     font-size: 35px;
+}
+
+.grey {
+    color: #7C93B5;
 }
 
 /* -------- */

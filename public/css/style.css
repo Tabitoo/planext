@@ -355,25 +355,37 @@ header {
 }
 
 .valor-banner_text-title {
-    margin: 60px;
+    margin: 10vh;
+    margin-top: 13vh;
 }
 
 .valor-banner_text-paragh {
-    padding: 60px;
+    padding: 8vh;
 }
 
 .valor-banner_text-paragh p {
     color: #ffffff;
-    font-size: 25px;
+    font-size: 1.5rem;
+    line-height: 4vh;
 }
 
 .valor-banner_text-title h1 {
     font-family: 'Gotham Black';
     font-weight: bold;
     font-size: 70px;
+    line-height: 4rem;
     color: #ffffff;
     text-align: right;
 
+}
+
+.valor-white {
+    font-weight: bold;
+}
+
+.valor-blue {
+    font-weight: bold;
+    color: #6B90C9;
 }
 
 /* ----- */
@@ -645,7 +657,8 @@ header {
 .sustentable-section_text_title h1 {
     font-family: 'Ink Free';
     color: #ffffff;
-    font-size: 35px;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .grey {
@@ -787,3 +800,196 @@ footer {
     color: #ffffff;
     margin-top: 10vh;
 }
+
+/* ----- */
+
+/* MEDIA QUIERIES */
+
+@media(max-width: 1201px) {
+    .valor-banner_text-paragh {
+        padding: 8vh
+    }
+
+    .valor-banner_text-paragh p {
+        font-size: 1.5rem;
+        line-height: 4vh;
+    }
+
+
+}
+
+@media(max-width: 1024px){
+    .proposito-section_text_title h1 {
+        font-size: 4rem;
+    }
+
+    .about-section_image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .proposito-banner_text {
+        width: 45%;
+    }
+
+
+    .action-section-box2 {
+        margin-left: 2vh;
+    }
+
+    .action-section-box-text {
+        margin: 60px;
+    }
+
+    .action-section-box-text-paragh p {
+        font-size: 12px;
+    }
+
+    .proposito-banner_text_paragh p {
+        font-size: 0.6rem;
+        line-height: initial;
+    }
+
+    .valor-banner_text-title h1 {
+        font-size: 3.4rem;
+        line-height: 3rem;
+    }
+
+    .valor-banner_text-paragh p {
+        font-size: 1.1rem;
+    }
+
+    .service-info {
+        margin: 7vh;
+    }
+
+}
+
+
+
+@media(max-width: 768px) {
+    .service-info-section {
+        flex-direction: column;
+    }
+
+    .service-info {
+        align-items: center;
+    }
+
+    .tasks-info-section {
+        flex-direction: column;
+    }
+
+    .action-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .action-section-box {
+        margin-bottom: 5vh;
+    }
+
+    .action-section-box2 {
+        margin-left: 0;
+    }
+
+    .valor-banner_text {
+        width: 70%;
+        left: 20vh;
+    }
+
+    .proposito-section {
+        height: 50vh;
+    }
+
+    .proposito-section_text_title h1 {
+        font-size: 3rem;
+    }
+
+
+    .sustentable-section_text_title h1 {
+        font-size: 1.5rem;
+    }
+
+
+    .proposito-banner_text {
+        width: 50%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .proposito-banner_text_paragh p {
+        font-size: 0.8rem;
+    }
+
+    .task-info-text p {
+        font-size: 1rem;
+    }
+
+    .task-info-title h4 {
+        font-size: 1.5rem;
+    }
+
+    .service-info-text p {
+        text-align: center;
+    }
+
+    .service-info-title h4 {
+        font-size: 1.5rem;
+    }
+
+    .form-banner_text h1 {
+        color: #71bf4f;
+    }
+
+    .form-banner_text p {
+        color: #71bf4f;
+    }
+
+    .footer-contact-info {
+        margin: 0;
+        margin-left: 0;
+    }
+
+    .banner-section_text h1 {
+        font-size: 4rem;
+    }
+
+    .form-box {
+        flex-direction: column;
+    }
+
+    .form-div1 {
+        width: 90vh;
+        margin-bottom: 0;
+    }
+
+    .form-div2 {
+        width: 90vh;
+        margin-top: 0;
+    }
+
+    .form-banner_text {
+        margin-top: 5vh;
+    }
+
+    .form-banner-section {
+        height: 100%;
+    }
+
+    .form-banner-section img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .footer-box {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+
+}
+
+

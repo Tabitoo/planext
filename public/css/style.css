@@ -65,7 +65,11 @@ header {
     /*border-left: 0.5px solid rgb(161, 159, 159);*/
     align-content: center;
     justify-content: space-around;
-    margin: 10px;
+
+}
+
+.header__navigation ul li:hover {
+    background-color: #CBE2F4;
 }
 
 .header__navigation_li figure {
@@ -75,6 +79,9 @@ header {
 .header__navigation_li a {
     padding-top: 0px;
     padding-bottom: 10px;
+    color: #365180 !important;
+    font-family: 'Gotham Black';
+    text-decoration: none;
 }
 
 .header_icono {
@@ -141,6 +148,15 @@ header {
     justify-content: space-around;
     width: 20vh;
 
+}
+
+.contact__list-li a img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact__list-li {
+    margin-right: 6px;
 }
 
 /* #2F3C5F */
@@ -298,7 +314,8 @@ header {
 }
 
 .about-section_text_parag p {
-    font-size: 14px;
+    font-size: 1.2rem;
+    text-align: justify;
 }
 
 .about-section_text_title  h3{
@@ -982,6 +999,178 @@ footer {
 
 /* MEDIA QUIERIES */
 
+@media(min-width: 1920px) {
+
+    .task-info-title h4 {
+        font-size: 25px;
+    }
+
+    .task-info-text p {
+        font-size: 17px;
+    }
+
+    .banner-section_text {
+        width: 50%;
+    }
+
+    .banner-section_text h1 {
+        font-size: 9rem;
+    }
+
+    .proposito-section_text_title h1 {
+        font-size: 7rem;
+    }
+
+    .about-section_text_parag {
+        width: 80%;
+    }
+
+    .proposito-banner_text_paragh p {
+        font-size: 14px;
+        text-align: justify;
+        line-height: 34px;
+    }
+
+    .proposito-banner-title h1 {
+        font-size: 30px;
+    }
+
+
+    .valor-banner_text-title {
+        margin-top: 20vh;
+    }
+
+    .valor-banner_text-title h1 {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+
+    .valor-banner_text-paragh p {
+        font-size: 36px;
+    }
+
+    .service-info-text {
+        width: 30vh;
+    }
+
+    .service-info-section {
+        justify-content: center;
+    }
+
+    .service-info {
+        margin: 4vh;
+    }
+
+    .values-section_text_box-info_paragh h4 {
+        font-size: 20px;
+    }
+
+    .values-section_text_box-info_paragh p {
+        font-size: 14px;
+    }
+
+    .action-section {
+        justify-content: center;
+    }
+
+    .action-section-box {
+        margin-right: 7vh;
+    }
+
+    .sustentable-section_text_title h1 {
+        font-size: 3rem;
+    }
+
+        
+}
+
+@media(min-width: 1600px) {
+
+    .task-info-title h4 {
+        font-size: 25px;
+    }
+
+    .task-info-text p {
+        font-size: 17px;
+    }
+
+    .banner-section_text {
+        width: 50%;
+    }
+
+    .banner-section_text h1 {
+        font-size: 9rem;
+    }
+
+    .proposito-section_text_title h1 {
+        font-size: 7rem;
+    }
+
+    .about-section_text_parag {
+        width: 80%;
+    }
+
+    .proposito-banner_text_paragh p {
+        font-size: 14px;
+        text-align: justify;
+        line-height: 34px;
+    }
+
+    .proposito-banner-title h1 {
+        font-size: 30px;
+    }
+
+
+    .valor-banner_text-title {
+        margin-top: 15vh;
+    }
+
+    .valor-banner_text-title h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    .valor-banner_text-paragh p {
+        font-size: 36px;
+    }
+
+    .service-info-text {
+        width: 30vh;
+    }
+
+    .service-info-section {
+        justify-content: center;
+    }
+
+    .service-info {
+        margin: 4vh;
+    }
+
+    .values-section_text_box-info_paragh h4 {
+        font-size: 20px;
+    }
+
+    .values-section_text_box-info_paragh p {
+        font-size: 14px;
+    }
+
+    .action-section {
+        justify-content: center;
+    }
+
+    .action-section-box {
+        margin-right: 7vh;
+    }
+
+    .sustentable-section_text_title h1 {
+        font-size: 3rem;
+    }
+
+        
+}
+
+
+
 @media(max-width: 1201px) {
     .valor-banner_text-paragh {
         padding: 8vh
@@ -996,6 +1185,14 @@ footer {
 }
 
 @media(max-width: 1027px) {
+
+    .team-info-section {
+        flex-direction: column;
+    }
+
+    .team-info {
+        align-items: center;
+    }
 
     .service-info-section {
         flex-direction: column;

@@ -87,6 +87,55 @@ header {
 }
 
 
+.second-header {
+
+    width: 100%;
+    background-color: #2F3C5F;
+    display: flex;
+}
+
+.second-header-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.second-header-box_text {
+    padding: 10px;
+}
+
+.second-header-box_text p {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.second-header-box_icons {
+    padding: 10px;
+}
+
+.second-header-box_icons p {
+    color: #3A527B;
+}
+
+.second-header-box_text ul {
+    list-style: none;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    width: 70vh;
+}
+
+.second-header-box_icons ul {
+    list-style: none;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    width: 20vh;
+
+}
+
+
 
 
 
@@ -190,6 +239,7 @@ header {
 .about-section {
     display: flex;
     width: 100%;
+    background-color: #F4F5F7;
 }
 
 .about-section_image {
@@ -209,6 +259,12 @@ header {
     display: flex;
     align-items: center;
     /*padding: 20px;*/
+}
+
+.about-section_image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .about-section_text_title figure {
@@ -285,13 +341,14 @@ header {
 
 .tasks-banner-section {
     width: 100%;
+    background-color: #F0F0F0;
 }
 
 .tasks-info-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px;
+    padding: 10px;
 }
 
 .task-info {
@@ -305,8 +362,8 @@ header {
 .tasks-title-section {
     display: flex;
     flex-direction: row;
-    margin: 5vh;
-    padding: 3vh;
+    margin: 0vh;
+    padding: 6vh;
     margin-bottom: 1vh;
     padding-bottom: 1vh;
     align-items: center;
@@ -477,6 +534,7 @@ header {
 .values-section {
     display: flex;
     width: 100%;
+    background-color: #F5F5F5;
 }
 
 .values-section_image {
@@ -821,6 +879,39 @@ footer {
     margin-top: 10vh;
 }
 
+
+.second-footer {
+
+    width: 100%;
+    background-color: #2F3C5F;
+    display: flex;
+}
+
+.second-footer-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.second-footer-box_text {
+    padding: 10px;
+}
+
+.second-footer-box_text p {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.second-footer-box_icons {
+    padding: 10px;
+}
+
+.second-footer-box_icons p {
+    color: #3A527B;
+}
+
+
 /* ----- */
 
 /* MEDIA QUIERIES */
@@ -988,14 +1079,12 @@ footer {
         background-color: #ffffff;
         width: 100%;
         height: auto;
-        position: fixed;
         top: 0;
         z-index: 10;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         padding: 10px;
-        transition: 1s;
         flex-wrap: wrap;
     }
 

@@ -1,3 +1,9 @@
+
+/* Montserrat bold
+  Montserrat medium
+  Gotham Black
+*/
+
 @font-face {
     font-family: 'Gotham Black';
     src: url('../fonts/Gotham\ Black\ Regular.ttf') format('truetype');
@@ -12,7 +18,23 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
 
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+p {
+    font-family: 'Montserrat-Medium';
+}
 
 html {
     margin: 0;
@@ -88,6 +110,10 @@ header {
     display: none;
 }
 
+.blue-banner-title {
+    color: #365180;
+}
+
 .header--scroll {
     width: 100%;
     background-color: white;
@@ -118,6 +144,25 @@ header {
 
 .second-header-box_text {
     padding: 10px;
+}
+
+.second-header-box_text ul {
+    width: 40vh;
+    margin-bottom: 0;
+}
+
+.second-header-box_icons ul {
+    margin-bottom: 0;
+    margin-left: 20vh;
+}
+
+.second-header-box_icons {
+    padding: 0;
+}
+
+.header__list-li {
+    font-family: 'Montserrat-Medium';
+    font-size: 14px;
 }
 
 .second-header-box_text p {
@@ -151,8 +196,8 @@ header {
 }
 
 .contact__list-li a img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 .contact__list-li {
@@ -169,14 +214,12 @@ header {
 }
 
 
-
-
 /* -------------- */
 
 
 .banner-section{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
     position: relative;
 }
@@ -187,13 +230,14 @@ header {
     width: 100%;
 }
 .banner-section img {
-    height: 100vh;
+    height: 116%;
     object-fit: cover;
+    top: -12vh;
 }
 
 .banner-section_text {
-    width: 60%;
-    height: 90vh;
+    width: 64%;
+    height: 70vh;
     display: flex;
     z-index: 1;
     position: relative;
@@ -205,8 +249,12 @@ header {
 .banner-section_text h1 {
     font-family: 'Gotham Black';
     font-size: 84px;
-    text-transform: capitalize;
     font-weight: bold;
+}
+
+.title-spanish h1 {
+    font-size: 65px;
+    line-height: 60px;
 }
 
 .banner-section_text .banner-title_1 {
@@ -226,9 +274,9 @@ header {
 /* --------- */
 
 .proposito-section {
-    background-color: #466495;
+    background-color: #365080;
     width: 100%;
-    height: 70vh;
+    height: 60vh;
 }
 
 .proposito-section_text {
@@ -246,7 +294,6 @@ header {
 .proposito-section_text_sub {
     margin-top: 12vh;
 }
-
 
 .proposito-section_text_title {
     margin-top: 10vh;
@@ -314,8 +361,9 @@ header {
 }
 
 .about-section_text_parag p {
-    font-size: 1.2rem;
+    font-size: 16px;
     text-align: justify;
+    line-height: 24px;
 }
 
 .about-section_text_title  h3{
@@ -366,7 +414,7 @@ header {
 .proposito-banner_text_paragh p {
     /*font-family: 'Gotham Black';*/
     font-size: 12px;
-    line-height: 23px;
+    line-height: 19px;
 }
 
 
@@ -389,7 +437,7 @@ header {
     flex-direction: column;
     /*justify-content: center; */
     text-align: center;
-    margin: 50px;
+    margin: 40px;
 }
 
 .tasks-title-section {
@@ -408,8 +456,8 @@ header {
 }
 
 .task-info-text  p {
-    font-size: 13px;
-    line-height: 26px;
+    font-size: 12px;
+    line-height: 24px;
 }
 
 .blue-title h4 {
@@ -423,7 +471,7 @@ header {
 .tasks-title-section h1 {
     font-family: 'Gotham Black';
     font-weight: bold;
-    font-size: 30px;
+    font-size: 22px;
     color: #466495;
     padding-left: 3vh;
 }
@@ -434,7 +482,7 @@ header {
 
 .valor-banner-section{
     width: 100%;
-    height: 100vh;
+    height: 39vw;
     overflow: hidden;
     position: relative;
 }
@@ -445,13 +493,13 @@ header {
     width: 100%;
 }
 .valor-banner-section img {
-    height: 100vh;
+    height: auto;
     object-fit: cover;
 }
 
 .valor-banner_text {
     background-color: #365180;
-    width: 40%;
+    width: 37%;
     height: 100%;
     /*display: flex;*/
     z-index: 1;
@@ -461,7 +509,7 @@ header {
     /*flex-direction: column;*/
     /*margin: 50px;*/
     /*padding: 50px;*/
-    left: 100vh;
+    left: 48vw;
 }
 
 .valor-banner_text-title {
@@ -470,20 +518,20 @@ header {
 }
 
 .valor-banner_text-paragh {
-    padding: 8vh;
+    padding: 7vh;
 }
 
 .valor-banner_text-paragh p {
     color: #ffffff;
-    font-size: 1.5rem;
-    line-height: 4vh;
+    font-size: 23px;
+    line-height: 25px;
 }
 
 .valor-banner_text-title h1 {
     font-family: 'Gotham Black';
     font-weight: bold;
-    font-size: 70px;
-    line-height: 4rem;
+    font-size: 60px;
+    line-height: 54px;
     color: #ffffff;
     text-align: right;
 
@@ -507,7 +555,7 @@ header {
 .service-info-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     margin: 10px;
 }
 
@@ -515,8 +563,13 @@ header {
     display: flex;
     flex-direction: column;
     /*justify-content: center; */
-    margin: 10vh;
+    margin: 0;
     margin-top: 3vh;
+    margin-left: 5vh;
+}
+
+.service-info-text {
+    width: 256px;
 }
 
 .service-title-section {
@@ -531,6 +584,10 @@ header {
 .service-info-title h4 {
     font-family: 'Gotham Black';
     font-size: 16px;
+}
+
+.service-info-text p {
+    font-size: 12px;
 }
 
 .service-title-section h1 {
@@ -551,7 +608,7 @@ header {
 .team-info-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     margin: 10px;
 }
 
@@ -559,8 +616,17 @@ header {
     display: flex;
     flex-direction: column;
     /*justify-content: center; */
-    margin: 10vh;
+    margin: 0;
     margin-top: 3vh;
+    margin-right: 4vh;
+}
+
+.team-info-text {
+    width: 260px;
+}
+
+.team-info-text p {
+    font-size: 12px;
 }
 
 .team-title-section {
@@ -580,7 +646,7 @@ header {
 .team-info-title h4 {
     font-family: 'Gotham Black';
     font-size: 16px;
-    color: #3D414A;
+    color: #365080;
 }
 
 .team-title-section h1 {
@@ -726,7 +792,7 @@ header {
 }
 
 .action-section-box_line {
-    width: 90%;
+    width: 80%;
     height: 5px;
     margin-bottom: 50px;
     background-color: #FEC428;
@@ -739,6 +805,7 @@ header {
     font-family: 'Gotham Black';
     font-weight: bold;
     color: #ffffff;
+    font-size: 13px;
 
 }
 
@@ -753,6 +820,7 @@ header {
     font-family: 'Gotham Black';
     font-weight: bold;
     color: #ffffff;
+    font-size: 24px;
 }
 
 .action-section-box-text-paragh p {
@@ -895,6 +963,8 @@ header {
     background-color: #71BF4F;
     width: 100%;
     height: 50px;
+    font-weight: bold;
+    font-family: 'Montserrat-Medium';
 }
 
 .form-div1 input::placeholder {
@@ -909,6 +979,7 @@ header {
 .form-div2 textarea {
     height: 100%;
     margin-bottom: 20px;
+    background-color: #E6E7E8;
 }
 
 
@@ -932,7 +1003,7 @@ header {
 footer {
 
     width: 100%;
-    background-color: #466495;
+    background-color: #365180;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -966,7 +1037,7 @@ footer {
 .second-footer {
 
     width: 100%;
-    background-color: #2F3C5F;
+    background-color: #2F3C60;
     display: flex;
 }
 
@@ -999,90 +1070,7 @@ footer {
 
 /* MEDIA QUIERIES */
 
-@media(min-width: 1920px) {
-
-    .task-info-title h4 {
-        font-size: 25px;
-    }
-
-    .task-info-text p {
-        font-size: 17px;
-    }
-
-    .banner-section_text {
-        width: 50%;
-    }
-
-    .banner-section_text h1 {
-        font-size: 9rem;
-    }
-
-    .proposito-section_text_title h1 {
-        font-size: 7rem;
-    }
-
-    .about-section_text_parag {
-        width: 80%;
-    }
-
-    .proposito-banner_text_paragh p {
-        font-size: 14px;
-        text-align: justify;
-        line-height: 34px;
-    }
-
-    .proposito-banner-title h1 {
-        font-size: 30px;
-    }
-
-
-    .valor-banner_text-title {
-        margin-top: 20vh;
-    }
-
-    .valor-banner_text-title h1 {
-        font-size: 6rem;
-        line-height: 6rem;
-    }
-
-    .valor-banner_text-paragh p {
-        font-size: 36px;
-    }
-
-    .service-info-text {
-        width: 30vh;
-    }
-
-    .service-info-section {
-        justify-content: center;
-    }
-
-    .service-info {
-        margin: 4vh;
-    }
-
-    .values-section_text_box-info_paragh h4 {
-        font-size: 20px;
-    }
-
-    .values-section_text_box-info_paragh p {
-        font-size: 14px;
-    }
-
-    .action-section {
-        justify-content: center;
-    }
-
-    .action-section-box {
-        margin-right: 7vh;
-    }
-
-    .sustentable-section_text_title h1 {
-        font-size: 3rem;
-    }
-
-        
-}
+/*
 
 @media(min-width: 1600px) {
 
@@ -1095,11 +1083,11 @@ footer {
     }
 
     .banner-section_text {
-        width: 50%;
+        width: 65%;
     }
 
     .banner-section_text h1 {
-        font-size: 9rem;
+        font-size: 5rem;
     }
 
     .proposito-section_text_title h1 {
@@ -1110,10 +1098,12 @@ footer {
         width: 80%;
     }
 
+  
+
     .proposito-banner_text_paragh p {
         font-size: 14px;
         text-align: justify;
-        line-height: 34px;
+        line-height: 26px;
     }
 
     .proposito-banner-title h1 {
@@ -1122,16 +1112,17 @@ footer {
 
 
     .valor-banner_text-title {
+        margin: 3vh;
         margin-top: 15vh;
     }
 
     .valor-banner_text-title h1 {
-        font-size: 5rem;
+        font-size: 6rem;
         line-height: 5rem;
     }
 
     .valor-banner_text-paragh p {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .service-info-text {
@@ -1163,11 +1154,917 @@ footer {
     }
 
     .sustentable-section_text_title h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
+    }
+
+    .sustentable-section_text_title {
+        margin: 10vh;
+    }
+
+    .sustentable-section {
+        height: 30vh;
+    }
+
+        
+}*/
+
+
+@media(min-width: 1600px) {
+
+    .header__list-li {
+        font-family: 'Montserrat-Medium';
+        font-size: 14px;
+    }
+
+    .banner-section {
+        height: 72vh;
+    }
+
+    .proposito-section {
+        height: 60vh;
+    }
+
+    .task-info {
+        margin: 33px;
+    }
+
+    .task-info-title h4 {
+        font-size: 16px;
+    }
+
+    .task-info-text p {
+        font-size: 12px;
+        text-align: inherit;
+        line-height: 24px;
+        letter-spacing: 1px;
+    }
+
+    .banner-section_text {
+        width: 70%;
+        margin-top: -10vh;
+    }
+
+    .banner-section_text h1 {
+        font-size: 6rem;
+    }
+
+    .proposito-section_text_title h1 {
+        font-size: 7rem;
+    }
+
+    .about-section_text_parag {
+        width: 73%;
+    }
+
+    .proposito-banner_text_paragh p {
+        font-size: 13px;
+        text-align: justify;
+        line-height: 24px;
+    }
+
+    .proposito-banner_text_paragh {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
+
+    .proposito-banner-title {
+        margin-top: 32px;
+    } 
+
+    .proposito-banner-title h1 {
+        font-size: 22px;
+    }
+
+    .valor-banner_text {
+        width: 33%;
+        left: 50vw;
+    }
+
+    .valor-banner_text-paragh {
+        padding: 6vh;
+    }
+
+    .valor-banner-section {
+        height: 80vh;
+    }
+
+    .valor-banner_text-title {
+        margin-top: 15vh;
+        margin-right: 6vh;
+    }
+
+    .valor-banner-section img {
+        height: auto;
+    }
+
+    .valor-banner_text-title h1 {
+        font-size: 70px;
+        line-height: 55px;
+    }
+
+    .valor-banner_text-paragh p {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .service-info-text {
+        width: 256px;
+    }
+
+    .service-info-title {
+        width: 256px;
+    }
+
+    .service-info-section {
+        justify-content: center;
+        margin-bottom: 4vh;
+    }
+
+    .service-info {
+        margin: 0;
+        margin-left: 4vh;
+    }
+
+    .values-section_text_box-info_paragh h4 {
+        font-size: 20px;
+    }
+
+    .values-section_text_box-info_paragh p {
+        font-size: 14px;
+    }
+
+    .action-section {
+        justify-content: center;
+    }
+
+    .action-section-box {
+        margin-right: 5vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
+    .action-section-box2 {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
+    .sustentable-section_text_title h1 {
+        font-size: 2.5rem;
+    }
+
+    .form-div1 input {
+        height: 70px;
+    }
+
+    .form-div1 {
+        width: 53vh;
+    }
+
+    .form-box-input input {
+        height: 70px;
+        font-size: 20px;
+    }
+
+    .form-banner_text h1 {
+        font-size: 50px;
+    }
+
+    .form-banner_text p {
+        font-size: 16px;
+    }
+
+    .form-banner-section {
+        height: 77vh;
+    }
+
+    .form {
+        margin-top: 3vh;
+    }
+
+    .form-banner-section img {
+        height: 100%;
+    }
+
+    .tasks-info-section {
+        padding: 35vh;
+        padding-top: 0vh;
+        padding-bottom: 1vh;
+    }
+
+    .tasks-title-section {
+        padding-left: 28vh;
+    }
+
+    .proposito-banner-section img {
+        height: auto;
+    }
+
+    .proposito-banner_text {
+        width: 36%;
+        margin: 109px;
+        padding: 33px;
+        margin-top: 16vh;
+    }
+
+    .proposito-banner-section {
+        height: 89vh;
+    }
+
+    .about-section_text_parag p {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: justify;
+        font-family: 'Montserrat-Medium';
+    }
+
+    .tasks-title-section h1 {
+        font-size: 26px;
+    }
+
+    .header__navigation ul li {
+        width: 205px;
+        pad: 12px;
+    }
+
+    .figure-logo {
+        margin: 10px;
+        margin-left: 30vh;
+    }
+
+    .header__navigation_li figure {
+        margin-top: 20px;
+    }
+
+    .header__navigation ul {
+        margin-right: 19vh;
+    }
+
+    .header__navigation_li a {
+        font-size: 18px;
+    }
+
+    .second-header-box_text ul {
+        width: 40vh;
+        margin-bottom: 0;
+    }
+
+    .second-header-box_icons ul {
+        margin-bottom: 0;
+        margin-left: 20vh;
+    }
+
+    .second-header-box_icons {
+        padding: 0;
+    }
+
+    .banner-section {
+        height: 72vh;
+    }
+
+    .banner-section img {
+        height: 116%;
+        top: -10vh;
+    }
+
+    footer {
+        padding: 40px;
+    }
+
+    .footer-box {
+        height: 12vh;
+        margin-left: 4vh;
+    }
+
+    .footer-contact-info {
+        margin: 40px;
+        margin-left: 40vh;
+    }
+
+    .footer-contact-info ul {
+        margin-top: 4vh;
+    }
+
+    .contact__list-li {
+        margin-right: 6px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-family: 'Montserrat-Medium';
+    }
+
+    .sustentable-section {
+        height: 33vh;
+    }
+
+    .sustentable-section_text_title {
+        margin: 12vh;
+    }
+
+    .service-title-section {
+        margin-left: 28vh;
+    }
+
+    .service-info-text p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .action-section-box-text {
+        margin-right: 1vh;
+        margin: 45px;
+    }
+
+    .action-section-box-text-paragh p {
+        font-size: 16px;
+    }
+
+    .action-section-box_line {
+        margin-top: 4vh;
+        margin-bottom: 30px;
+        width: 78%;
+    }
+
+    .action-section-box-text-paragh {
+        margin-top: 4vh;
+    }
+
+    .banner-section_text .banner-title_2 {
+        margin-top: -22px;
+    }
+
+    .title-spanish h1 {
+        font-size: 5rem;
+        line-height: 70px;
+    }
+
+    .team-info-section {
+        justify-content: center;
+    }
+
+    .team-info {
+        margin: 0;
+    }
+
+    .team-info-text {
+        width: 290px;
+        margin-right: 6vh;
+    }
+
+    .team-title-section {
+        margin-left: 28vh;
+    }
+
+    .team-info figure img {
+        height: 40vh;
+    }
+
+    .second-footer-box_text p {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+
+    .action-section-box-text-title h5 {
+        font-size: 24px;
+    }
+
+    .action-section-box_button button {
+        font-size: 13px;
+    }
+
+    .values-section_text {
+        padding-top: 1vh;
+    }
+
+    .about-section_text {
+        padding-top: 9vh;
     }
 
         
 }
+
+@media(min-width: 1920px) {
+
+    .header__list-li {
+        font-family: 'Montserrat-Medium';
+        font-size: 14px;
+    }
+
+    .banner-section {
+        height: 72vh;
+    }
+
+    .proposito-section {
+        height: 60vh;
+    }
+
+    .task-info {
+        margin: 33px;
+    }
+
+    .task-info-title h4 {
+        font-size: 16px;
+    }
+
+    .task-info-text p {
+        font-size: 12px;
+        text-align: inherit;
+        line-height: 24px;
+        letter-spacing: 1px;
+    }
+
+    .banner-section_text {
+        width: 70%;
+        margin-top: -10vh;
+    }
+
+    .banner-section_text h1 {
+        font-size: 6rem;
+    }
+
+    .proposito-section_text_title h1 {
+        font-size: 7rem;
+    }
+
+    .about-section_text_parag {
+        width: 73%;
+    }
+
+    .proposito-banner_text_paragh p {
+        font-size: 13px;
+        text-align: justify;
+        line-height: 24px;
+    }
+
+    .proposito-banner_text_paragh {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
+
+    .proposito-banner-title {
+        margin-top: 32px;
+    } 
+
+    .proposito-banner-title h1 {
+        font-size: 22px;
+    }
+
+    .valor-banner_text {
+        width: 33%;
+        left: 99vh;
+    }
+
+    .valor-banner_text-paragh {
+        padding: 6vh;
+    }
+
+    .valor-banner-section {
+        height: 80vh;
+    }
+
+    .valor-banner_text-title {
+        margin-top: 15vh;
+        margin-right: 6vh;
+    }
+
+    .valor-banner-section img {
+        height: auto;
+    }
+
+    .valor-banner_text-title h1 {
+        font-size: 87px;
+        line-height: 74px;
+    }
+
+    .valor-banner_text-paragh p {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .service-info-text {
+        width: 256px;
+    }
+
+    .service-info-title {
+        width: 256px;
+    }
+
+    .service-info-section {
+        justify-content: center;
+        margin-bottom: 4vh;
+    }
+
+    .service-info {
+        margin: 0;
+        margin-left: 4vh;
+    }
+
+    .values-section_text_box-info_paragh h4 {
+        font-size: 20px;
+    }
+
+    .values-section_text_box-info_paragh p {
+        font-size: 14px;
+    }
+
+    .action-section {
+        justify-content: center;
+    }
+
+    .action-section-box {
+        margin-right: 5vh;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
+    .action-section-box2 {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
+    .sustentable-section_text_title h1 {
+        font-size: 3rem;
+    }
+
+    .form-div1 input {
+        height: 70px;
+    }
+
+    .form-div1 {
+        width: 53vh;
+    }
+
+    .form-box-input input {
+        height: 70px;
+        font-size: 20px;
+    }
+
+    .form-banner_text h1 {
+        font-size: 50px;
+    }
+
+    .form-banner_text p {
+        font-size: 16px;
+    }
+
+    .form-banner-section {
+        height: 77vh;
+    }
+
+    .form {
+        margin-top: 3vh;
+    }
+
+    .form-banner-section img {
+        height: 100%;
+    }
+
+    .tasks-info-section {
+        padding: 35vh;
+        padding-top: 0vh;
+        padding-bottom: 1vh;
+    }
+
+    .tasks-title-section {
+        padding-left: 28vh;
+    }
+
+    .proposito-banner-section img {
+        height: auto;
+    }
+
+    .proposito-banner_text {
+        width: 36%;
+        margin: 109px;
+        padding: 33px;
+        margin-top: 16vh;
+    }
+
+    .proposito-banner-section {
+        height: 89vh;
+    }
+
+    .about-section_text_parag p {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: justify;
+        font-family: 'Montserrat-Medium';
+    }
+
+    .tasks-title-section h1 {
+        font-size: 26px;
+    }
+
+    .header__navigation ul li {
+        width: 205px;
+        pad: 12px;
+    }
+
+    .figure-logo {
+        margin: 10px;
+        margin-left: 30vh;
+    }
+
+    .header__navigation_li figure {
+        margin-top: 20px;
+    }
+
+    .header__navigation ul {
+        margin-right: 19vh;
+    }
+
+    .header__navigation_li a {
+        font-size: 18px;
+    }
+
+    .second-header-box_text ul {
+        width: 40vh;
+        margin-bottom: 0;
+    }
+
+    .second-header-box_icons ul {
+        margin-bottom: 0;
+        margin-left: 20vh;
+    }
+
+    .second-header-box_icons {
+        padding: 0;
+    }
+
+    .banner-section {
+        height: 72vh;
+    }
+
+    .banner-section img {
+        height: 116%;
+        top: -10vh;
+    }
+
+    footer {
+        padding: 40px;
+    }
+
+    .footer-box {
+        height: 12vh;
+        margin-left: 4vh;
+    }
+
+    .footer-contact-info {
+        margin: 40px;
+        margin-left: 40vh;
+    }
+
+    .footer-contact-info ul {
+        margin-top: 4vh;
+    }
+
+    .contact__list-li {
+        margin-right: 6px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-family: 'Montserrat-Medium';
+    }
+
+    .sustentable-section {
+        height: 33vh;
+    }
+
+    .sustentable-section_text_title {
+        margin: 12vh;
+    }
+
+    .service-title-section {
+        margin-left: 28vh;
+    }
+
+    .service-info-text p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .action-section-box-text {
+        margin-right: 1vh;
+        margin: 45px;
+    }
+
+    .action-section-box-text-paragh p {
+        font-size: 16px;
+    }
+
+    .action-section-box_line {
+        margin-top: 4vh;
+        margin-bottom: 30px;
+        width: 78%;
+    }
+
+    .action-section-box-text-paragh {
+        margin-top: 4vh;
+    }
+
+    .banner-section_text .banner-title_2 {
+        margin-top: -22px;
+    }
+
+    .title-spanish h1 {
+        font-size: 5rem;
+        line-height: 70px;
+    }
+
+    .team-info-section {
+        justify-content: center;
+    }
+
+    .team-info {
+        margin: 0;
+    }
+
+    .team-info-text {
+        width: 290px;
+        margin-right: 6vh;
+    }
+
+    .team-title-section {
+        margin-left: 28vh;
+    }
+
+    .team-info figure img {
+        height: 40vh;
+    }
+
+    .second-footer-box_text p {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+
+    .action-section-box-text-title h5 {
+        font-size: 24px;
+    }
+
+    .action-section-box_button button {
+        font-size: 13px;
+    }
+
+    .values-section_text {
+        padding-top: 1vh;
+    }
+
+    .about-section_text {
+        padding-top: 9vh;
+    }
+
+        
+}
+
+@media(min-width: 1440px) {
+
+    .valor-banner-section {
+        height: 40vw;
+    }
+
+    .valor-banner_text-paragh {
+        padding: 3vw;
+    }
+
+    .valor-banner_text-title {
+        margin: 3vw;
+        margin-top: 7vw;
+    }
+
+    .proposito-banner-section {
+        height: 100%;
+    }
+
+    .proposito-banner-section img {
+        height: 100%;
+    }
+
+
+}
+
+@media(min-width: 2560px) {
+    .title-spanish h1 {
+        font-size: 7rem;
+    }
+
+    .proposito-section_text_sub h4 {
+        font-size: 2rem;
+    }
+
+    .proposito-section_text_title h1 {
+        font-size: 9rem;
+    }
+
+    .about-section_text_title h3 {
+        font-size: 35px;
+    }
+
+    .about-section_text_parag p {
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .about-section_text_button {
+        margin-top: 5vh;
+    }
+
+    .about-section_text_button button {
+        font-size: 22px;
+    }
+
+    .about-section_text {
+        padding: 67px;
+    }
+
+    .proposito-banner_text_paragh p {
+        font-size: 20px;
+        line-height: 37px;
+    }
+
+    .task-info-text p {
+        font-size: 26px;
+    }
+
+    .valor-banner_text-paragh p {
+        font-size: 48px;
+    }
+
+    .valor-banner_text-title h1 {
+        font-size: 8rem;
+        line-height: 7rem;
+    }
+
+    .service-info-title h4 {
+        font-size: 30px;
+    }
+
+    .service-info-text p {
+        font-size: 24px;
+    }
+
+    .values-section_text_box-info_paragh h4 {
+        font-size: 24px;
+    }
+
+    .values-section_text_box-info_paragh p {
+        font-size: 19px;
+    }
+
+    .team-info-title h4 {
+        font-size: 22px;
+    }
+
+    .team-info-text p {
+        font-size: 18px;
+    }
+
+    .sustentable-section_text_title h1 {
+        font-size: 4rem;
+    }
+
+    .action-section-box {
+        width: 50vh;
+        height: 39vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .action-section-box2 {
+        width: 50vh;
+        height: 39vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .action-section-box-text {
+        margin: 38px;
+    }
+
+    .action-section-box-text-title h4 {
+        font-size: 40px;
+    }
+
+    .action-section-box-text-title h5 {
+        font-size: 25px;
+    }
+
+    .action-section-box-text-paragh p {
+        font-size: 20px;
+    }
+
+    .action-section-box_button button {
+        font-size: 23px;
+    }
+
+    .action-section-box_line {
+        margin-top: 8vh;
+    }
+
+}
+
+
+
 
 
 
@@ -1217,6 +2114,14 @@ footer {
 }
 
 @media(max-width: 1024px){
+
+    .valor-banner-section {
+        height: 40vw;
+    }
+
+    .title-spanish h1 {
+        font-size: 55px;
+    }
 
     .second-header-box_text ul {
         width: 60vh;
@@ -1274,13 +2179,25 @@ footer {
         line-height: initial;
     }
 
+    .sustentable-section_text_title {
+        margin: 13vh;
+    }
+
+    .valor-banner_text-title {
+        margin-top: 8vh;
+    }
+
+    .action-section-box-text-title h5 {
+        font-size: 23px;
+    }
+
     .valor-banner_text-title h1 {
-        font-size: 3.4rem;
-        line-height: 3rem;
+        font-size: 46px;
+        line-height: 37px;
     }
 
     .valor-banner_text-paragh p {
-        font-size: 1.1rem;
+        font-size: 16px;
     }
 
     .service-info {
@@ -1439,12 +2356,25 @@ footer {
         color: #71bf4f;
     }
 
+    .valor-banner_text-paragh {
+        padding: 7vh;
+    }
+
+    .valor-banner_text-title {
+        margin-top: 3vh;
+    }
+
     .banner-section_text h1 {
-        font-size: 4rem;
+        font-size: 3rem;
+        line-height: 45px;
     }
 
     .valor-banner_text-title h1 {
-        font-size: 3.2rem;
+        font-size: 40px;
+    }
+
+    .valor-banner_text-paragh p {
+        font-size: 15px;
     }
 
     .sustentable-section_text_title h1 {
@@ -1475,6 +2405,8 @@ footer {
 
 
 @media(max-width: 850px) {
+
+   
 
     header {
         background-color: #ffffff;
@@ -1576,6 +2508,14 @@ footer {
         margin-top: 14px;
     }
 
+    .valor-banner-section {
+        height: 57vw;
+    }
+
+    .valor-banner-section img {
+        height: 100%;
+    }
+
 
 
     .service-info-section {
@@ -1665,6 +2605,10 @@ footer {
         font-size: 4rem;
     }
 
+    .title-spanish h1 {
+        font-size: 3rem;
+    }
+
     .form-box {
         flex-direction: column;
     }
@@ -1718,6 +2662,17 @@ footer {
 
 @media(max-width: 580px) {
 
+
+    .valor-banner-section {
+        height: 80vh;
+    }
+
+
+    .valor-banner_text-title h1 {
+        font-size: 46px;
+        line-height: 45px;
+    }
+
     .second-header-box {
         flex-direction: column;
     }
@@ -1734,6 +2689,10 @@ footer {
     .banner-section_text h1 {
         font-size: 2.6rem; 
 
+    }
+
+    .title-spanish h1 {
+        font-size: 1.8rem;
     }
 
     .proposito-section_text_title h1 {
@@ -1777,7 +2736,7 @@ footer {
     }
 
     .form-div1 {
-        width: 60vh;
+        width: 40vh;
     }
 
     .form-div2 {
@@ -1794,15 +2753,21 @@ footer {
     }
 
     .action-section-box {
-        width: 70vh;
-        height: 60vh;
+        width: auto;
+        height: auto;
         background-position: center;
+        background-repeat: no-repeat;
     }
 
     .action-section-box2 {
-        width: 70vh;
-        height: 60vh;
+        width: auto;
+        height: auto;
         background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .second-header-box_text ul {
+        width: 50vh;
     }
 
     .green-line {
@@ -1832,6 +2797,10 @@ footer {
         font-size: 2.3rem;
     }
 
+    .title-spanish h1 {
+        font-size: 1.5rem;
+    }
+
     .action-section-box-text-title h4 {
         font-size: 1.5rem;
     }
@@ -1854,8 +2823,16 @@ footer {
         padding: 4vh;
     }
 
+    .action-section-box-text {
+        margin: 40px;
+    }
+
     .form-banner_text h1 {
         font-size: 2.3rem;
+    }
+
+    .sustentable-section_text_title h1 {
+        font-size: 1.2rem;
     }
 
 }
